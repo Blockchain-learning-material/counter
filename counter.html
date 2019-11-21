@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-5">Smart Contract</h1>
+    <div class="card">
+      <div class="card-header">
+        Counter
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Current count</h5>
+        <p class="card-text"><span id="count">0</span></p>
+        <button type="button" class="btn btn-danger" id="decrement" onclick="decrement()">
+          -
+        </button>
+        <button type="button" class="btn btn-success" id="increment" onclick="increment()">
+          +
+        </button>
+        <button type="button" class="btn btn-primary ml-5" onclick="getCount()">
+          getCount
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.20.6/dist/web3.min.js"></script>
+  <script src="js/abi.js"></script>
+  <script src="js/counter.js"></script>
+</body>
+
+</html>
